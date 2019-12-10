@@ -17,8 +17,10 @@
                     <th class="text-center">TV局</th>
                 </tr>
                 <?php
-                require('sample\App\Http\Controllers\ChannelsController.php');
-                $channels = App\Http\Controllers\ChannelsController ?>
+                //require('App\Http\Controllers\ChannelsController.php');
+                //require(dirname(__FILE__)."\App\Http\Controllers\ChannelsController.php");
+                require "vendor/autoload.php";
+                $channels = new App\Http\Controllers\index() ?>
                 <?php foreach($channels as $channel): ?>
                     <tr>
                         <td><?php echo $channel['id']; ?></td>
