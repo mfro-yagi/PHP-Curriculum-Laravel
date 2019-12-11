@@ -24,6 +24,7 @@ class ChannelsController extends Controller
             'updated_at' => now()
         ]);
 
+        Channel::where('title', 2)->update(['published_flg' => true]);
 
         // 取得した値をビュー「channel/index」に渡す
         return view('channel.index', ['channels' => $channels]);
