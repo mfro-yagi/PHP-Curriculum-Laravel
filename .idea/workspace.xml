@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475b17b-bedd-4abf-9397-405a10b5044b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sample.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/channel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/channel/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/sample/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +55,48 @@
         <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="channels: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="forge" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="goods: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="forge" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="item: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="forge" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="password_resets: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="forge" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="report: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="forge" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="shop: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
+  </component>
+  <component name="ExcludedPharFiles">
+    <excludedPaths>
+      <path value="$PROJECT_DIR$/composer.phar/" />
+    </excludedPaths>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -154,8 +195,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.blade.php">
     <configuration name="index.blade.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/sample/resources/views/channel/index.blade.php" useBuiltInWebServerPort="true">
@@ -184,7 +232,17 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@1ebc6a0c" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@36fa475b" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5a5c563d" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4d8a17e" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -206,7 +264,8 @@
       <workItem from="1575960745009" duration="6020000" />
       <workItem from="1576031484244" duration="3974000" />
       <workItem from="1576046596980" duration="1044000" />
-      <workItem from="1576047805582" duration="2234000" />
+      <workItem from="1576047805582" duration="2828000" />
+      <workItem from="1576132289780" duration="11824000" />
     </task>
     <servers />
   </component>
@@ -227,21 +286,53 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="336" y="239" key="#Deployment" timestamp="1576049014037">
+    <state x="336" y="239" key="#Deployment" timestamp="1576134092543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="336" y="239" key="#Deployment/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576049014037" />
+    <state x="336" y="239" key="#Deployment/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576134092543" />
+    <state x="837" y="351" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576137035042">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="837" y="351" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576137035042" />
     <state x="217" y="186" width="1200" height="800" key="DiffContextDialog" timestamp="1576047538169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="217" y="186" width="1200" height="800" key="DiffContextDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576047538169" />
+    <state width="917" height="266" key="GridCell.Tab.0.bottom" timestamp="1576143244612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="917" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576143244612" />
+    <state width="917" height="266" key="GridCell.Tab.0.center" timestamp="1576143244612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="917" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576143244612" />
+    <state width="917" height="266" key="GridCell.Tab.0.left" timestamp="1576143244612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="917" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576143244612" />
+    <state width="917" height="266" key="GridCell.Tab.0.right" timestamp="1576143244612">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="917" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576143244612" />
     <state x="594" y="359" key="NewPhpClassDialog" timestamp="1576048004634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="359" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576048004634" />
+    <state x="1032" y="473" key="NewPhpFileDialog" timestamp="1576137554708">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="473" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576137554708" />
+    <state x="618" y="207" key="SettingsEditor" timestamp="1576137058776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="618" y="207" key="SettingsEditor/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576137058776" />
     <state x="593" y="499" key="VCS.ChangelistChooser" timestamp="1576046793320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="593" y="499" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576046793320" />
+    <state x="674" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1576136570755">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="674" y="243" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576136570755" />
   </component>
 </project>
