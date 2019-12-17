@@ -18,6 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/channels','ChannelsController@index');
-Route::post('/channels','ChannelsController@index');
+Route::get('channel/index','ChannelsController@index');
 

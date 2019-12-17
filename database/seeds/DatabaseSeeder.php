@@ -33,5 +33,11 @@ class ChannelsSeeder extends Seeder {
             'description' => 'Eテレ',
             'published_flg' => false,
         ));
+
+        Channel::create(array(
+            'title' => 3,
+            'description' => '埼玉テレビ',
+            'published_flg' => false,
+        ));
     }
 }

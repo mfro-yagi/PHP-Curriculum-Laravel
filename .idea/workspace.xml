@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475b17b-bedd-4abf-9397-405a10b5044b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Channel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Channel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/channel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/channel/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/sample/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,17 +231,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@36fa475b" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2d3da6ec" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@5a5c563d" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4d8a17e" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2c9d5797" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -265,7 +259,8 @@
       <workItem from="1576031484244" duration="3974000" />
       <workItem from="1576046596980" duration="1044000" />
       <workItem from="1576047805582" duration="2828000" />
-      <workItem from="1576132289780" duration="11824000" />
+      <workItem from="1576132289780" duration="12870000" />
+      <workItem from="1576560873965" duration="3460000" />
     </task>
     <servers />
   </component>
@@ -298,22 +293,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="217" y="186" width="1200" height="800" key="DiffContextDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576047538169" />
-    <state width="917" height="266" key="GridCell.Tab.0.bottom" timestamp="1576143244612">
+    <state width="917" height="266" key="GridCell.Tab.0.bottom" timestamp="1576561513880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="917" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576143244612" />
-    <state width="917" height="266" key="GridCell.Tab.0.center" timestamp="1576143244612">
+    <state width="917" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576561513880" />
+    <state width="917" height="266" key="GridCell.Tab.0.center" timestamp="1576561513880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="917" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576143244612" />
-    <state width="917" height="266" key="GridCell.Tab.0.left" timestamp="1576143244612">
+    <state width="917" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576561513880" />
+    <state width="917" height="266" key="GridCell.Tab.0.left" timestamp="1576561513880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="917" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576143244612" />
-    <state width="917" height="266" key="GridCell.Tab.0.right" timestamp="1576143244612">
+    <state width="917" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576561513880" />
+    <state width="917" height="266" key="GridCell.Tab.0.right" timestamp="1576561513880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="917" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576143244612" />
+    <state width="917" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576561513880" />
     <state x="594" y="359" key="NewPhpClassDialog" timestamp="1576048004634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
