@@ -5,10 +5,20 @@
     <title>channel index</title>
 </head>
 <body>
-<ul>
+
+
+<table class="table table-striped">
+    <tr>
+        <th>チャンネル</th>
+        <th>テレビ局</th>
+    </tr>
     @foreach($data as $d)
-        <li>{{$d->description}}</li>
+        <tr>
+            <td>{{ $gather->title }}</td>
+            <td>{{ $gather->description }}</td>
+        </tr>
     @endforeach
-</ul>
+</table>
+
 </body>
 </html>
