@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('channel/index','ChannelsController@index');
+Route::get('/sites/channel/htdocs/index','ChannelsController@index');
 

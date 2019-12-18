@@ -17,8 +17,10 @@ class ChannelsController extends Controller
         // データ取得
         $data = $md->getData();
 
+        $word =  "中田";
         // ビューを返す
-        return view('channel.index', ['data' => $data]);
+        return view('sites.channel.htdocs.index', compact('word','data'));
+        //return view('sites.channel.htdocs.index', ['data' => $data]);
 //        // DBよりChannelテーブルの値を全て取得
 //        $channels = Channel::all();
 //

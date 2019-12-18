@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="c3b16122-8ed4-43e4-bc5a-7bcd8a86a0fa" name="test.lhost" url="http://test.lhost/sample">
-        <fileTransfer host="test.lhost" port="22" accessType="SFTP">
+      <webServer id="c3b16122-8ed4-43e4-bc5a-7bcd8a86a0fa" name="vagrant.lhost" url="http://vagrant.lhost/">
+        <fileTransfer host="vagrant.lhost" port="22" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

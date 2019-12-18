@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475b17b-bedd-4abf-9397-405a10b5044b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/channel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/channel/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/channel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sites/channel/htdocs/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,8 +202,18 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\study\sample\resources\views\sites\channel\htdocs" />
+      <recent name="C:\work\study\sample\resources\views\sites" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\study\sample\resources\views" />
+      <recent name="C:\work\study\sample" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.blade.php">
     <configuration name="index.blade.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/sample/resources/views/channel/index.blade.php" useBuiltInWebServerPort="true">
@@ -227,12 +242,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2d3da6ec" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4d350b1c" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2c9d5797" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2f447cb8" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -256,7 +271,8 @@
       <workItem from="1576046596980" duration="1044000" />
       <workItem from="1576047805582" duration="2828000" />
       <workItem from="1576132289780" duration="12870000" />
-      <workItem from="1576560873965" duration="3894000" />
+      <workItem from="1576560873965" duration="10687000" />
+      <workItem from="1576636451932" duration="15504000" />
     </task>
     <servers />
   </component>
@@ -277,10 +293,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="336" y="239" key="#Deployment" timestamp="1576134092543">
+    <state x="1104" y="290" key="#Deployment" timestamp="1576648171054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="336" y="239" key="#Deployment/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576134092543" />
+    <state x="1104" y="290" key="#Deployment/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576648171054" />
+    <state x="400" y="181" key="#Options" timestamp="1576572910120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="400" y="181" key="#Options/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576572910120" />
+    <state x="400" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576636969067">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="400" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576636969067" />
     <state x="837" y="351" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576137035042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -289,6 +313,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="217" y="186" width="1200" height="800" key="DiffContextDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576047538169" />
+    <state x="208" y="121" width="1200" height="799" key="DirDiffDialog" timestamp="1576648130062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="208" y="121" width="1200" height="799" key="DirDiffDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576648130062" />
+    <state x="766" y="419" key="FileChooserDialogImpl" timestamp="1576644905633">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="766" y="419" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576644905633" />
     <state width="917" height="266" key="GridCell.Tab.0.bottom" timestamp="1576561513880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -321,6 +353,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="593" y="499" key="VCS.ChangelistChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576046793320" />
+    <state x="871" y="398" key="ftp.server.browser" timestamp="1576648005531">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="871" y="398" key="ftp.server.browser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576648005531" />
     <state x="674" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1576136570755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

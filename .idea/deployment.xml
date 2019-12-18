@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="test.lhost">
+  <component name="PublishConfigData" autoUpload="Always" serverName="vagrant.lhost">
     <serverData>
-      <paths name="test.lhost">
+      <paths name="vagrant.lhost">
         <serverdata>
           <mappings>
-            <mapping deploy="/var/www/html/sample" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/vagrant" local="$PROJECT_DIR$/resources/views" web="/" />
             <mapping local="" />
           </mappings>
         </serverdata>

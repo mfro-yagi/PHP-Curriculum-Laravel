@@ -8,14 +8,15 @@
 
 
 <table class="table table-striped">
+    <h1>Hello{{$word}}!</h1>
     <tr>
-        <th>チャンネル</th>
+        <th>チャンネル名</th>
         <th>テレビ局</th>
     </tr>
     @foreach($data as $d)
         <tr>
-            <td>{{ $gather->title }}</td>
-            <td>{{ $gather->description }}</td>
+            <td>{{ $d->title }}</td>
+            <td>{{ $d->description }}</td>
         </tr>
     @endforeach
 </table>
