@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475b17b-bedd-4abf-9397-405a10b5044b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/sites/channel/htdocs/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/channel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sites/channel/htdocs/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sites/channel/htdocs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sites/channel/htdocs/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/sample/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +46,6 @@
         <item name="forge" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="forge" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="channels: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -202,7 +194,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -211,6 +203,7 @@
       <recent name="C:\work\study\sample\resources\views\sites" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\study\sample\public" />
       <recent name="C:\work\study\sample\resources\views" />
       <recent name="C:\work\study\sample" />
     </key>
@@ -272,7 +265,7 @@
       <workItem from="1576047805582" duration="2828000" />
       <workItem from="1576132289780" duration="12870000" />
       <workItem from="1576560873965" duration="10687000" />
-      <workItem from="1576636451932" duration="15504000" />
+      <workItem from="1576636451932" duration="19945000" />
     </task>
     <servers />
   </component>
@@ -293,10 +286,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1104" y="290" key="#Deployment" timestamp="1576648171054">
+    <state x="372" y="362" key="#Deployment" timestamp="1576655905725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1104" y="290" key="#Deployment/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576648171054" />
+    <state x="372" y="362" key="#Deployment/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576655905725" />
     <state x="400" y="181" key="#Options" timestamp="1576572910120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -341,10 +334,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="359" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576048004634" />
-    <state x="1032" y="473" key="NewPhpFileDialog" timestamp="1576137554708">
+    <state x="1032" y="473" key="NewPhpFileDialog" timestamp="1576656969799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="473" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576137554708" />
+    <state x="1032" y="473" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576656969799" />
     <state x="618" y="207" key="SettingsEditor" timestamp="1576137058776">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('index','ChannelsController@index');
-Route::post('index','ChannelsController@index');
+Route::get('/asset','ChannelsController@index');
+Route::post('/index','ChannelsController@index');

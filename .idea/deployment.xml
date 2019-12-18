@@ -5,7 +5,7 @@
       <paths name="vagrant.lhost">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/vagrant" local="$PROJECT_DIR$/resources/views" web="/" />
+            <mapping deploy="/home/vagrant/sample" local="$PROJECT_DIR$" web="/" />
             <mapping local="" />
           </mappings>
         </serverdata>

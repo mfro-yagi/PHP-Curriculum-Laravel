@@ -8,18 +8,23 @@
 
 
 <table class="table table-striped">
-    <h1>Hello{{$word}}!</h1>
+
+    <h1>Hello<{{<?php $word ?>}}!</h1>
     <tr>
         <th>チャンネル</th>
         <th>テレビ局</th>
     </tr>
-    @foreach($data as $d)
-        <tr>
-            <td>{{ $d->title }}</td>
-            <td>{{ $d->description }}</td>
-        </tr>
-    @endforeach
+    <?php @foreach($data as $d) ?>
+    <tr>
+        <td>{{<?php $d->title ?>}}</td>
+        <td>{{<?php $d->description ?>}}</td>
+    </tr>
+    <?php @endforeach ?>
+
 </table>
 
 </body>
 </html>
+
+
+
