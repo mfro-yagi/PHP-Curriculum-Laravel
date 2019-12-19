@@ -39,5 +39,6 @@ class ChannelsSeeder extends Seeder {
             'description' => '埼玉テレビ',
             'published_flg' => false,
         ));
+
     }
 }

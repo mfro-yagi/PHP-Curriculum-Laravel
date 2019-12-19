@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Channel;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\DB;
 
 class ChannelsController extends Controller
@@ -18,25 +19,28 @@ class ChannelsController extends Controller
         $data = $md->getData();
 
         $word =  "中田";
-        // ビューを返す
-        return view('sites.channel.htdocs.index', compact('word','data'));
-        //return view('sites.channel.htdocs.index', ['data' => $data]);
-//        // DBよりChannelテーブルの値を全て取得
-//        $channels = Channel::all();
-//
-////        $channels_insert = Channel::insert("INSERT INTO channels (title, description, published_flg, created_at, updated_at)
-////VALUES (?, ?, ?, ?, ?)", [3,'埼玉テレビ', true, now(), now()]);
+
+//        DB::table('channels')->where('title', 2)->update([
+//            'public_broadcast' => true
+//        ]);
+
 //        DB::table('channels')->insert([
 //            'title' => 3,
-//            'description' => '埼玉テレビ',
-//            'published_flg' => false,
+//            'broadcaster' => '埼玉テレビ',
+//            'public_broadcast' => false,
 //            'created_at' => now(),
 //            'updated_at' => now()
 //        ]);
-//
-//        $users = DB::table('channels')->select('title', 'description')->get();
-//
-//        $channel1 = DB::table('channels')->where('title', 1)->first();
+
+        //DB::table('channels')->where('id', 5)->delete();
+
+        //DB::statement('alter table channels change description broadcaster text');
+
+        //DB::table('channels')->where('title', '=', 5)->delete();
+
+        // ビューを返す
+        return view('sites.channel.htdocs.index', compact('word','data'));
+
 //
 //        DB::table('shop')
 //            ->join('item','shop.item_id', '=', 'item.item_id')
@@ -71,6 +75,24 @@ class ChannelsController extends Controller
 //
 ////        $channels = Channel::all();
 ////        return $channels;
+    }
+
+    //受取と保存
+    public function edit(){
+
+        $title = Input::get('title');
+        $broadcaster = Input::get('broadcaster');
+        $public_broadcast = Input::get('public_broadcast');
+
+        DB::table('channels')->insert([
+            'title'=>$title,
+            'broadcaster'=>$broadcaster,
+            'public_broadcast'=>$public_broadcast,
+            'created_at'=>now(),
+            'updated_at'=>now()
+        ]);
+
+        return $this->index();
     }
 
 }
