@@ -19,13 +19,14 @@
             <td>{{ $d->title }}</td>
             <td>{{ $d->broadcaster }}</td>
             <td>{{ $d->public_broadcast }}</td>
+            <td><a href="edit/{{$d->id}}" class="btn btn-primary btn-sm">編集</a></td>
         </tr>
     @endforeach
 </table>
 
 <br><br>
 
-<form action="edit" method="post">
+<form action="create" method="post">
     <label><input type="number" name="title" placeholder="チャンネル" required></label><br>
     <label><input type="text" name="broadcaster" placeholder="テレビ局" required></label><br>
     <p>

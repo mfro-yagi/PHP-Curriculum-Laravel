@@ -20,4 +20,11 @@ Route::get('/', function () {
 
 Route::get('/channel/index','ChannelsController@index');
 
-Route::post('/channel/edit','ChannelsController@edit');
+Route::post('/channel/create','ChannelsController@create');
+
+Route::get('/channel/edit/{id}', 'ChannelsController@edit');
+
+Route::patch('/channel/update/{id}', 'ChannelsController@update');
+
+
+Route::get('/shop/index','ShopsController@index');

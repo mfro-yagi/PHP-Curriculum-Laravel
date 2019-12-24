@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1475b17b-bedd-4abf-9397-405a10b5044b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ShopsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sites/channel/htdocs/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sites/shop/htdocs/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/sites/channel/htdocs/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/sites/shop/htdocs/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChannelsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sites/channel/htdocs/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/sites/channel/htdocs/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sites/channel/htdocs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sites/channel/htdocs/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -53,13 +55,6 @@
         <item name="forge" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="channels: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="forge" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="item: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
@@ -82,6 +77,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="shop: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="forge" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="forge: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="shop_b: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -195,18 +197,20 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/sites" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\study\sample\resources\views\sites" />
+      <recent name="C:\work\study\sample\app\Http\Controllers" />
+      <recent name="C:\work\study\sample\public\sites\channel\htdocs" />
+      <recent name="C:\work\study\sample\resources\views\sites\channel\htdocs" />
+      <recent name="C:\work\study\sample\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\work\study\sample\resources\views\sites\channel\htdocs" />
       <recent name="C:\work\study\sample\resources\views\sites" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\work\study\sample\public" />
-      <recent name="C:\work\study\sample\resources\views" />
-      <recent name="C:\work\study\sample" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.blade.php">
@@ -236,12 +240,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@477e0199" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5a949ac4" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:forge" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2f17ed0b" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@44a45b43" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -267,7 +271,8 @@
       <workItem from="1576132289780" duration="12870000" />
       <workItem from="1576560873965" duration="10687000" />
       <workItem from="1576636451932" duration="20523000" />
-      <workItem from="1576737475365" duration="11034000" />
+      <workItem from="1576737475365" duration="11759000" />
+      <workItem from="1577162211180" duration="12242000" />
     </task>
     <servers />
   </component>
@@ -316,29 +321,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="766" y="419" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576644905633" />
-    <state width="1081" height="266" key="GridCell.Tab.0.bottom" timestamp="1576746893559">
+    <state width="1081" height="266" key="GridCell.Tab.0.bottom" timestamp="1577174632957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1081" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1280.52.1280.984@0.0.1920.1040" timestamp="1577174632957" />
     <state width="1081" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576746893559" />
-    <state width="1081" height="266" key="GridCell.Tab.0.center" timestamp="1576746893559">
+    <state width="1081" height="266" key="GridCell.Tab.0.center" timestamp="1577174632956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1081" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1280.52.1280.984@0.0.1920.1040" timestamp="1577174632956" />
     <state width="1081" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576746893559" />
-    <state width="1081" height="266" key="GridCell.Tab.0.left" timestamp="1576746893559">
+    <state width="1081" height="266" key="GridCell.Tab.0.left" timestamp="1577174632956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1081" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1280.52.1280.984@0.0.1920.1040" timestamp="1577174632956" />
     <state width="1081" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576746893559" />
-    <state width="1081" height="266" key="GridCell.Tab.0.right" timestamp="1576746893559">
+    <state width="1081" height="266" key="GridCell.Tab.0.right" timestamp="1577174632957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1081" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1280.52.1280.984@0.0.1920.1040" timestamp="1577174632957" />
     <state width="1081" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576746893559" />
-    <state x="594" y="359" key="NewPhpClassDialog" timestamp="1576048004634">
+    <state x="594" y="359" key="NewPhpClassDialog" timestamp="1577173006065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="594" y="359" key="NewPhpClassDialog/0.0.1920.1040/-1280.52.1280.984@0.0.1920.1040" timestamp="1577173006065" />
     <state x="594" y="359" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576048004634" />
-    <state x="1032" y="473" key="NewPhpFileDialog" timestamp="1576656969799">
+    <state x="1032" y="473" key="NewPhpFileDialog" timestamp="1577171522546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="1032" y="473" key="NewPhpFileDialog/0.0.1920.1040/-1280.52.1280.984@0.0.1920.1040" timestamp="1577171522546" />
     <state x="1032" y="473" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576656969799" />
     <state x="618" y="207" key="SettingsEditor" timestamp="1576137058776">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -352,9 +363,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="871" y="398" key="ftp.server.browser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576648005531" />
-    <state x="674" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1576136570755">
+    <state x="674" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1577168014811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="674" y="243" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1280.52.1280.984@0.0.1920.1040" timestamp="1577168014811" />
     <state x="674" y="243" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1576136570755" />
   </component>
 </project>
