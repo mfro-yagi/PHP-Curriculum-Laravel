@@ -21,7 +21,11 @@ class ChannelsController extends Controller
         $word =  "中田";
 
 
-        //DB::table('channels')->where('title', '=', 5)->delete();
+        //絞り込み（In節）　whereNotInで逆
+        //$data = $md->whereIn('title', [2, 5, 9])->get();
+
+        //null判定　今回の場合全部記述されない
+        //$data = $md->whereNull('title')->get();
 
         // ビューを返す
         return view('sites.channel.htdocs.index', compact('word','data'));
@@ -42,7 +46,7 @@ class ChannelsController extends Controller
             'updated_at'=>now()
         ]);
 
-        return $this->index();
+        return view('sites.channel.htdocs.complete');
     }
 
     public function edit($id)
@@ -50,22 +54,41 @@ class ChannelsController extends Controller
         $word =  "編集画面";
 
         #レコードをidで指定
-        $data = DB::table('channels')->where('id', $id)->get();
+        $data = DB::table('channels')->where('id', $id)->first();
 
         #viewに連想配列を渡す
         return view('sites.channel.htdocs.edit', compact('word','data'));
     }
 
     #DBの更新処理
-    public function update(Request $request,$id)
+    /**
+     * @param Request $request
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function update(Request $request, $id)
     {
-        $channel = DB::table('channels')->where('id', $id)->get();
+        $word =  "編集完了！";
+
+        $md = new Channel();
+        $channel = $md->where('id', $id)->first();
         $channel->title = $request->input('title');
         $channel->broadcaster = $request->input('broadcaster');
         $channel->public_broadcast = $request->input('public_broadcast');
         $channel->updated_at = $request->input(now());
         $channel->save();
-        return $this->index();
+
+        return view('sites.channel.htdocs.complete', compact('word'));
+    }
+
+    public function delete($id){
+
+        $word =  "削除しました";
+
+        DB::table('channels')->where('id', $id)->delete();
+
+        return view('sites.channel.htdocs.complete', compact('word'));
+
     }
 
 }

@@ -45,9 +45,22 @@ class ShopsController extends Controller
 //        $data1 -> whereDay('created', '27') -> get();
 //        $data1 -> wheretime('created', '16:43:20') -> get();
 
-        //$shinjuku = $data1-> where('shop_name', '新宿') ->select('item_id', 'shop_name','item_name', 'quantity') -> get();
+        $dataA = DB::table('shop')
+            ->join('item','shop.item_id', '=', 'item.item_id')
+            ->select('shop.shop_name',
+                'shop.item_id',
+                'item.item_name',
+                'shop.quantity')
+            ;
 
-        $data = $data2->where('shop_name', '天王寺')->select('item_id', 'shop_name','item_name', 'quantity')  -> union("shinjuku")-> get();
+        $data = DB::table('shop_b')
+            ->join('item','shop_b.item_id', '=', 'item.item_id')
+            ->select('shop_b.shop_name',
+                'shop_b.item_id',
+                'item.item_name',
+                'shop_b.quantity')
+            ->union($dataA)
+            ->get();
 
         //null判定
         DB::table('shop_b') -> whereNull('shop_name') -> get();
@@ -55,5 +68,26 @@ class ShopsController extends Controller
 // ビューを返す
         return view('sites.shop.htdocs.index', compact('word','data'));
     }
+
+//    public function iPod(){
+//        $tokyo = DB::table('shop')
+//            ->join('item','shop.item_id', '=', 'item.item_id')
+//            ->where('item.item_name', '=', 'iPod')
+//            ->select('shop.shop_name',
+//                'shop.item_id',
+//                'item.item_name',
+//                'shop.quantity');
+//
+//        DB::table('shop')
+//            ->insert('insert into shop() ')
+//            ->select('shop.shop_name',
+//                'shop.item_id',
+//                'item.item_name',
+//                'shop.quantity');
+//
+//
+//
+//        return view('sites.shop.htdocs.index', compact('word','data'));
+//    }
 
 }

@@ -20,6 +20,7 @@
             <td>{{ $d->broadcaster }}</td>
             <td>{{ $d->public_broadcast }}</td>
             <td><a href="edit/{{$d->id}}" class="btn btn-primary btn-sm">編集</a></td>
+            <td><a href="delete/{{$d->id}}" class="btn btn-primary btn-sm">削除</a></td>
         </tr>
     @endforeach
 </table>

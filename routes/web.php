@@ -24,7 +24,14 @@ Route::post('/channel/create','ChannelsController@create');
 
 Route::get('/channel/edit/{id}', 'ChannelsController@edit');
 
-Route::patch('/channel/update/{id}', 'ChannelsController@update');
+Route::get('/channel/edit/update/{id}','ChannelsController@update');
+
+Route::post('/channel/edit/update/{id}','ChannelsController@update');
+
+Route::patch('/channel/edit/update/{id}', 'ChannelsController@update');
+
+Route::get('/channel/delete/{id}', 'ChannelsController@delete');
+
 
 
 Route::get('/shop/index','ShopsController@index');
