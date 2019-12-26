@@ -16,29 +16,23 @@ class ShopsController extends Controller
 
         $word =  "中田";
 
-        //DB::table('channels')->where('title', '=', 5)->delete();
-
-        $data1 =  DB::table('shop')
+        $select = DB::table('shop')
             ->join('item','shop.item_id', '=', 'item.item_id')
-            ->select('shop.shop_name',
+            ->select(['shop.shop_name',
                 'shop.item_id',
                 'item.item_name',
-                'item.price',
-                'shop.quantity',
-                'shop.created',
-                'shop.modified')
-            ->get();
+                'shop.quantity'])
+            ;
 
-        $data2 =  DB::table('shop_b')
-            ->join('item','shop_b.item_id', '=', 'item.item_id')
-            ->select('shop_b.shop_name',
-                'shop_b.item_id',
-                'item.item_name',
-                'item.price',
-                'shop_b.quantity',
-                'shop_b.created',
-                'shop_b.modified')
-            ->get();
+//        $data = DB::table('shop_b')
+//            ->join('item','shop_b.item_id', '=', 'item.item_id')//->query()
+//            ->insert(['shop_b.shop_name',
+//                'shop_b.item_id',
+//                'item.item_name',
+//                'shop_b.quantity'])
+//            ->values($select)
+//            ->execute();
+
 
 //        $data1 -> where('price', '>=', 5000) -> get();
 //        $data1 -> whereDate('created', '2019-12-04') -> get();
@@ -53,20 +47,30 @@ class ShopsController extends Controller
                 'shop.quantity')
             ;
 
-        $data = DB::table('shop_b')
+        $dataB = DB::table('shop_b')
             ->join('item','shop_b.item_id', '=', 'item.item_id')
             ->select('shop_b.shop_name',
                 'shop_b.item_id',
                 'item.item_name',
                 'shop_b.quantity')
-            ->union($dataA)
-            ->get();
+            ->union($dataA);
+
+        $data = $dataA ->union($dataB)->get();
+
+        $insert = DB::insert('insert into $dataB select * from $dataA');
+
+        $sum_data = DB::table($insert)
+            ->selectRaw('item.item_name, sum(shop_b.quantity) AS quantity_cnt')
+            ->groupBy('item.item_name')
+        ->get();
+
+        //$data = DB::insert("INSERT INTO $dataA SELECT * FROM  $dataB");
 
         //null判定
         DB::table('shop_b') -> whereNull('shop_name') -> get();
 
 // ビューを返す
-        return view('sites.shop.htdocs.index', compact('word','data'));
+        return view('sites.shop.htdocs.index', compact('word','data', 'sum_data'));
     }
 
 //    public function iPod(){
@@ -79,7 +83,7 @@ class ShopsController extends Controller
 //                'shop.quantity');
 //
 //        DB::table('shop')
-//            ->insert('insert into shop() ')
+//            ->insert('insert into shop ')
 //            ->select('shop.shop_name',
 //                'shop.item_id',
 //                'item.item_name',

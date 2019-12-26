@@ -46,7 +46,7 @@ class ChannelsController extends Controller
             'updated_at'=>now()
         ]);
 
-        return view('sites.channel.htdocs.complete');
+        return view('sites.channel.htdocs.complete', compact('word'));
     }
 
     public function edit($id)
